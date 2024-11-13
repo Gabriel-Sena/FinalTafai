@@ -1,0 +1,54 @@
+@import url(../global.css);
+
+.historia {
+  font-family: Arial;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+/* Fachada do Comércio */
+.fachada img {
+  width: 95%;
+  height: auto;
+  margin-bottom: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* História do Comércio */
+.historia img {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-left: 5px;
+}
+
+/* Fotos do Local */
+.fotos-local {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 0px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 5px;
+  background-color: #f00;
+}
+
+.fotos-local img {
+  width: 24%;
+  height: auto;
+  border-radius: 0px;
+}
+<<<<<<< HEAD
+
+.linha-vermelha {
+  border: none;                /* Remove o estilo padrão */
+  border-top: 2px solid red;   /* Define a espessura e a cor da linha */
+            /* Espaçamento acima e abaixo da linha */
+  width: 100%;                 /* Faz com que a linha ocupe toda a largura da página */
+}
+=======
+>>>>>>> fd8062c18667c42ee212a1458b2337fb6f05f839

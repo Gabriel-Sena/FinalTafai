@@ -1,0 +1,177 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f7f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho principal */
+h1 {
+    font-size: 2.5em;
+    color: #f00;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Subtítulos (secundários) */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Link de logout */
+p a {
+    color: #FF6347;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário para adicionar produto */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1em;
+    color: #f00;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+form input[type="text"], form input[type="number"], form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #f00;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilo específico para a célula de descrição */
+td.descricao {
+    max-width: 200px;  /* Limita a largura da coluna */
+    height: 100px;     /* Altura fixa para o campo de descrição */
+    overflow: auto;    /* Ativa a rolagem se necessário */
+    word-wrap: break-word;  /* Quebra palavras longas para evitar ultrapassar o limite */
+    white-space: normal;   /* Permite quebras de linha no texto */
+}
+
+/* Assegura que o conteúdo dentro da célula não ultrapasse o limite */
+td.descricao div {
+    height: 100%;  /* Garante que o div ocupe toda a altura disponível */
+    overflow: auto; /* Garante a rolagem no div interno */
+    padding-right: 10px; /* Opcional: adiciona um pequeno espaço para o conteúdo */
+}
+
+/* Botões de editar e excluir */
+a.edit, a.delete {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+a.edit:hover {
+    color: #45a049;
+}
+
+a.delete {
+    color: #FF6347;
+}
+
+a.delete:hover {
+    color: #e53e3e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input[type="text"], form input[type="number"], form input[type="file"] {
+        font-size: 1em;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
