@@ -42,7 +42,6 @@
   height: auto;
   border-radius: 0px;
 }
-<<<<<<< HEAD
 
 .linha-vermelha {
   border: none;                /* Remove o estilo padrão */
@@ -50,5 +49,3 @@
             /* Espaçamento acima e abaixo da linha */
   width: 100%;                 /* Faz com que a linha ocupe toda a largura da página */
 }
-=======
->>>>>>> fd8062c18667c42ee212a1458b2337fb6f05f839
