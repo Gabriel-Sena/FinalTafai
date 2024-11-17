@@ -44,7 +44,7 @@
 
 .product-table th,
 .product-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #ff0000;
   padding: 10px;
   text-align: left;
 }
