@@ -3,61 +3,53 @@
 @import url(./reset.css);
 
 body {
-  border: 3.37vw solid var(--bg-border-color); /* Borda ocupa 3,37% da largura da viewport */
-  min-height: 100vh;  /* Ocupa a altura total da viewport */
+  position: relative;          /* Posicionamento relativo do corpo */
+  margin: 0;                   /* Remove margens padrão */
+  padding: 0;                  /* Remove preenchimento padrão */
+  min-height: 100vh;           /* Altura mínima ocupa toda a viewport */
+  border: 3.37vw solid red;    /* Bordas fixas */
+  box-sizing: border-box;      /* Inclui as bordas no cálculo total */
   font-family: 'Asket', sans-serif;
 }
 
 
 /* Menu de Navegação */
 .menu {
-  bottom: 0;
-  background-color: white;
-  width: 100%;
+  position: fixed; /* Fixo em relação à tela */
+  bottom: 0;       /* Ancorado na base da tela */
+  left: 0;         /* Ancorado na lateral esquerda */
+  width: 100%;     /* Ocupa 100% da largura da tela */
+  background-color: #ff0000;
   text-align: center;
-  padding: 0px 0;
-  border-top: 0px solid #ff0000;  /* Opcional: borda superior no menu */
-  /*border-top: px solid #ccc; Opcional: borda superior no menu */
+  z-index: 1000;   /* Garante que o menu fique acima de outros elementos */
+  padding: 10px 0; /* Espaçamento interno para o menu */
 }
 
 .menu ul {
   list-style: none;
-  text-align: center;
-  background-color: #f2f2f2;
-  padding: 1%;
+  margin: 0;
+  padding: 0;
+  display: flex;        /* Alinhamento flexível dos itens */
+  justify-content: center; /* Centraliza os itens no menu */
 }
 
 .menu ul li {
-  display: inline;
-  margin: 0 15px;
-  position: relative; /* Necessário para a barra vertical */
+  margin: 0 15px; /* Espaçamento entre os links */
 }
 
 .menu ul li:not(:last-child)::after {
-  content: "|"; /* Barra vertical como divisão */
-  position: absolute;
-  right: -15px; /* Ajuste para posicionar a barra */
-  color: #333; /* Cor da barra */
+  content: "|";     /* Barra de separação entre itens */
+  margin-left: 15px; /* Espaço à esquerda da barra */
+  color: #ffffff;      /* Cor da barra */
 }
 
 .menu ul li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
 }
 
 .menu ul li a:hover {
-  color: #ff0000;
+  color: #000000;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .fotos-local {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .fotos-local img {
-    width: 100%;
-  }
-}

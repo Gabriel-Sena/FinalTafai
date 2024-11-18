@@ -45,7 +45,18 @@
 
 .linha-vermelha {
   border: none;                /* Remove o estilo padrão */
-  border-top: 2px solid red;   /* Define a espessura e a cor da linha */
+  border-top: 1rem solid red;   /* Define a espessura e a cor da linha */
             /* Espaçamento acima e abaixo da linha */
   width: 100%;                 /* Faz com que a linha ocupe toda a largura da página */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .fotos-local {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fotos-local img {
+    width: 100%;
+  }
 }
